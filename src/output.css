@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
@@ -560,6 +562,18 @@ video {
   inset: 0px;
 }
 
+.-bottom-\[70px\]{
+  bottom: -70px;
+}
+
+.-right-1\/2{
+  right: -50%;
+}
+
+.-top-28{
+  top: -7rem;
+}
+
 .top-10{
   top: 2.5rem;
 }
@@ -593,20 +607,17 @@ video {
   display: flex;
 }
 
+.max-w-\[400px\]{
+  max-width: 400px;
+}
+
+.max-w-fit{
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
 .max-w-screen-xl{
   max-width: 1280px;
-}
-
-.grow-0{
-  flex-grow: 0;
-}
-
-.grow{
-  flex-grow: 1;
-}
-
-.grid-rows-1{
-  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row-reverse{
@@ -629,10 +640,6 @@ video {
   justify-content: space-between;
 }
 
-.justify-around{
-  justify-content: space-around;
-}
-
 .justify-evenly{
   justify-content: space-evenly;
 }
@@ -653,8 +660,17 @@ video {
   gap: 1.5rem;
 }
 
+.rounded-\[50px\]{
+  border-radius: 50px;
+}
+
 .rounded-lg{
   border-radius: 0.5rem;
+}
+
+.rounded-t-\[220px\]{
+  border-top-left-radius: 220px;
+  border-top-right-radius: 220px;
 }
 
 .border{
@@ -670,6 +686,11 @@ video {
   border-color: rgb(132 115 102 / var(--tw-border-opacity));
 }
 
+.bg-deep-taupe{
+  --tw-bg-opacity: 1;
+  background-color: rgb(125 108 96 / var(--tw-bg-opacity));
+}
+
 .bg-tuscany{
   --tw-bg-opacity: 1;
   background-color: rgb(180 164 149 / var(--tw-bg-opacity));
@@ -682,6 +703,11 @@ video {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-9{
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
 }
 
 .px-\[60px\]{
@@ -699,28 +725,32 @@ video {
   padding-bottom: 0.625rem;
 }
 
-.py-80{
-  padding-top: 20rem;
-  padding-bottom: 20rem;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.py-24{
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .py-28{
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.font-\[\'Montserrat\'\]{
+  font-family: 'Montserrat';
+}
+
 .font-logo-font{
   font-family: 'Poiret One';
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .text-8xl{
@@ -732,13 +762,21 @@ video {
   font-size: 40px;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-light{
   font-weight: 300;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .leading-9{
@@ -750,14 +788,42 @@ video {
   color: rgb(59 59 59 / var(--tw-text-opacity));
 }
 
+.text-shadow{
+  --tw-text-opacity: 1;
+  color: rgb(132 115 102 / var(--tw-text-opacity));
+}
+
+.text-sonic-silver{
+  --tw-text-opacity: 1;
+  color: rgb(118 118 118 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.shadow-about1{
+  --tw-shadow: 1px -1px 10.1px rgba(0, 0, 0, 0.85);
+  --tw-shadow-colored: 1px -1px 10.1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-about2{
+  --tw-shadow: -20px -20px 30px 0px rgba(0, 0, 0, 0.16);
+  --tw-shadow-colored: -20px -20px 30px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-header{
   --tw-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.25);
   --tw-shadow-colored: 2px 1px 7px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-btn{
+  --tw-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --tw-shadow-colored: 0px 4px 4px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
