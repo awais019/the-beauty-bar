@@ -6,13 +6,11 @@
     <link href="./output.css" rel="stylesheet" />
     <title>The Beauty Bar</title>
   </head>
-  <body class="max-w-screen-xl mx-auto px-[60px]">
+  <body class="max-w-screen-xl mx-auto px-[60px] text-black-olive">
     <header
-      class="bg-tuscany p-4 rounded-lg flex items-center justify-between shadow-header relative top-10"
+      class="bg-tuscany p-4 rounded-lg flex items-center justify-between shadow-header relative top-10 z-10"
     >
-      <div class="text-black-olive text-[40px] leading-9 font-logo-font">
-        The Beauty Bar
-      </div>
+      <div class="text-[40px] leading-9 font-logo-font">The Beauty Bar</div>
       <nav>
         <ul class="flex items-center gap-6 text-white">
           <li>
@@ -44,7 +42,7 @@
         </ul>
       </nav>
 
-      <a href="#" class="flex gap-2 items-center text-black-olive">
+      <a href="#" class="flex gap-2 items-center">
         <span>Book Now </span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -60,5 +58,50 @@
         </svg>
       </a>
     </header>
+    <main>
+      <section class="flex flex-row-reverse relative">
+        <img src="../images/banner.png" alt="Banner Image" />
+        <div class="flex items-center px-[60px] absolute inset-0">
+          <div>
+            <p class="font-light mb-4">
+              "Beauty is confidence in your own skin".
+            </p>
+            <h1 class="font-logo-font text-8xl">The Beauty Bar</h1>
+            <p class="my-7">
+              We are glad you are here to love and impress yourself.
+            </p>
+            <div class="flex flex-col items-center justify-center">
+              <div class="py-2 flex items-center justify-center gap-6">
+                <a
+                  href="#"
+                  class="flex gap-3.5 items-center justify-center px-4 py-2 border border-shadow"
+                >
+                  <span>Book Now</span>
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.8394 18L13.4394 16.55L16.9894 13H4.83936V11H16.9894L13.4394 7.45L14.8394 6L20.8394 12L14.8394 18Z"
+                      fill="#3B3B3B"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="py-2.5 border-b border-shadow"
+                  >Free Consultation
+                </a>
+              </div>
+              <p>
+                *Alternatively, discover our services and book from the price
+                list*
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
