@@ -8,6 +8,7 @@ module.exports = {
         shadow: "#847366",
         "sonic-silver": "#767676",
         "deep-taupe": "#7D6C60",
+        "warm-gray": "#A9A9A9",
       },
       fontFamily: {
         "logo-font": ["'Poiret One'"],
