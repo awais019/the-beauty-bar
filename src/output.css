@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
@@ -46,7 +50,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Lato, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -444,7 +448,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -494,7 +498,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -544,21 +548,85 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mx-auto {
+.relative{
+  position: relative;
+}
+
+.top-10{
+  top: 2.5rem;
+}
+
+.mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
 
-.max-w-screen-xl {
+.flex{
+  display: flex;
+}
+
+.max-w-screen-xl{
   max-width: 1280px;
 }
 
-.bg-tuscany {
+.items-center{
+  align-items: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
+.bg-tuscany{
   --tw-bg-opacity: 1;
   background-color: rgb(180 164 149 / var(--tw-bg-opacity));
 }
 
-.px-\[60px\] {
+.p-4{
+  padding: 1rem;
+}
+
+.px-\[60px\]{
   padding-left: 60px;
   padding-right: 60px;
+}
+
+.font-logo-font{
+  font-family: 'Poiret One';
+}
+
+.text-\[40px\]{
+  font-size: 40px;
+}
+
+.leading-9{
+  line-height: 2.25rem;
+}
+
+.text-black-olive{
+  --tw-text-opacity: 1;
+  color: rgb(59 59 59 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-header{
+  --tw-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.25);
+  --tw-shadow-colored: 2px 1px 7px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
