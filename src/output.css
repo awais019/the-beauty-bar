@@ -1002,6 +1002,10 @@ video {
   padding-top: 2rem;
 }
 
+.pt-12{
+  padding-top: 3rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1294,6 +1298,10 @@ video {
     padding-bottom: 4rem;
   }
 
+  .mobileSm\:pt-16{
+    padding-top: 4rem;
+  }
+
   .mobileSm\:text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -1350,6 +1358,10 @@ video {
     padding-bottom: 5rem;
   }
 
+  .mobile\:pt-20{
+    padding-top: 5rem;
+  }
+
   .mobile\:text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -1362,6 +1374,14 @@ video {
 }
 
 @media (min-width: 690px){
+  .tablet\:flex{
+    display: flex;
+  }
+
+  .tablet\:flex-row{
+    flex-direction: row;
+  }
+
   .tablet\:p-4{
     padding: 1rem;
   }
@@ -1369,6 +1389,10 @@ video {
   .tablet\:py-28{
     padding-top: 7rem;
     padding-bottom: 7rem;
+  }
+
+  .tablet\:pt-28{
+    padding-top: 7rem;
   }
 
   .tablet\:text-2xl{
@@ -1396,6 +1420,10 @@ video {
   .laptopSm\:mx-12{
     margin-left: 3rem;
     margin-right: 3rem;
+  }
+
+  .laptopSm\:flex{
+    display: flex;
   }
 
   .laptopSm\:px-12{
