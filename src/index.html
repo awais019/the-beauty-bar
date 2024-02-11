@@ -65,16 +65,14 @@
         </svg>
       </a>
     </header>
-    <header
-      class="absolute z-10 px-3 py-1 mx-5 rounded-lg mobile:hidden max-w-fit shadow-header top-5"
-    >
-      <button>
+    <header class="absolute z-10 top-5 left-5 mobile:hidden">
+      <button class="p-1 rounded-md bg-tuscany" id="navButton">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
-          stroke="currentColor"
+          stroke="white"
           class="w-6 h-6"
         >
           <path
@@ -84,6 +82,57 @@
           />
         </svg>
       </button>
+      <div
+        class="hidden p-3 transition-transform duration-500 ease-in-out rounded-lg bg-tuscany"
+        id="navBar"
+      >
+        <div class="mb-6 text-2xl leading-9 font-logo-font">The Beauty Bar</div>
+        <nav class="mb-6">
+          <ul class="flex flex-col gap-6 text-white">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center gap-2">
+                <span>Services</span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 6L10 11L15 6L17 7L10 14L3 7L5 6Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="flex items-center gap-2">
+          <span>Book Now </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="12"
+            viewBox="0 0 16 12"
+            fill="none"
+          >
+            <path
+              d="M10 12L8.6 10.55L12.15 7H0V5H12.15L8.6 1.45L10 0L16 6L10 12Z"
+              fill="#3B3B3B"
+            />
+          </svg>
+        </a>
+      </div>
     </header>
     <main>
       <section class="relative flex flex-row-reverse">
@@ -474,5 +523,6 @@
       </div>
     </footer>
     <script src="./testimonials.js"></script>
+    <script src="./mobileNav.js"></script>
   </body>
 </html>
