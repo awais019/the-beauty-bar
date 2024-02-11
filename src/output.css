@@ -590,12 +590,92 @@ video {
   top: 1.25rem;
 }
 
+.-top-1\/2{
+  top: -50%;
+}
+
+.-top-1\/4{
+  top: -25%;
+}
+
+.-top-1\/3{
+  top: -33.333333%;
+}
+
+.-top-\[22\%\]{
+  top: -22%;
+}
+
+.-top-\[23\%\]{
+  top: -23%;
+}
+
+.-top-\[24\%\]{
+  top: -24%;
+}
+
+.-top-\[25\%\]{
+  top: -25%;
+}
+
+.-top-\[30\%\]{
+  top: -30%;
+}
+
+.-top-\[20\%\]{
+  top: -20%;
+}
+
+.-top-\[10\%\]{
+  top: -10%;
+}
+
+.-top-\[5\%\]{
+  top: -5%;
+}
+
+.-top-\[2\%\]{
+  top: -2%;
+}
+
+.-top-\[1\%\]{
+  top: -1%;
+}
+
+.-top-0{
+  top: -0px;
+}
+
+.right-1\/2{
+  right: 50%;
+}
+
+.right-1\/4{
+  right: 25%;
+}
+
+.-top-20{
+  top: -5rem;
+}
+
+.-top-10{
+  top: -2.5rem;
+}
+
+.-top-5{
+  top: -1.25rem;
+}
+
 .z-10{
   z-index: 10;
 }
 
 .col-span-2{
   grid-column: span 2 / span 2;
+}
+
+.col-span-3{
+  grid-column: span 3 / span 3;
 }
 
 .col-start-1{
@@ -663,6 +743,18 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
+}
+
 .line-clamp-4{
   overflow: hidden;
   display: -webkit-box;
@@ -705,12 +797,24 @@ video {
   height: 100%;
 }
 
+.h-1\/4{
+  height: 25%;
+}
+
 .w-1\/4{
   width: 25%;
 }
 
 .w-6{
   width: 1.5rem;
+}
+
+.w-3\/5{
+  width: 60%;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .max-w-\[400px\]{
@@ -830,6 +934,10 @@ video {
 
 .gap-9{
   gap: 2.25rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .gap-x-10{
@@ -1250,6 +1358,38 @@ video {
   content: var(--tw-content);
 }
 
+@media not all and (min-width: 750px){
+  .max-laptopSm\:h-48{
+    height: 12rem;
+  }
+}
+
+@media not all and (min-width: 690px){
+  .max-tablet\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .max-tablet\:h-screen{
+    height: 100vh;
+  }
+
+  .max-tablet\:h-16{
+    height: 4rem;
+  }
+
+  .max-tablet\:h-24{
+    height: 6rem;
+  }
+
+  .max-tablet\:h-48{
+    height: 12rem;
+  }
+
+  .max-tablet\:w-screen{
+    width: 100vw;
+  }
+}
+
 @media not all and (min-width: 630px){
   .max-mobile\:col-start-2{
     grid-column-start: 2;
@@ -1410,6 +1550,10 @@ video {
     gap: 1.5rem;
   }
 
+  .mobile\:gap-12{
+    gap: 3rem;
+  }
+
   .mobile\:px-0{
     padding-left: 0px;
     padding-right: 0px;
@@ -1443,15 +1587,77 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .mobile\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .mobile\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 690px){
+  .tablet\:absolute{
+    position: absolute;
+  }
+
+  .tablet\:left-\[38\%\]{
+    left: 38%;
+  }
+
+  .tablet\:top-1\/3{
+    top: 33.333333%;
+  }
+
   .tablet\:flex{
     display: flex;
   }
 
+  .tablet\:grid{
+    display: grid;
+  }
+
+  .tablet\:h-1\/4{
+    height: 25%;
+  }
+
+  .tablet\:h-3\/5{
+    height: 60%;
+  }
+
+  .tablet\:h-full{
+    height: 100%;
+  }
+
+  .tablet\:w-full{
+    width: 100%;
+  }
+
+  .tablet\:w-3\/5{
+    width: 60%;
+  }
+
+  .tablet\:w-1\/4{
+    width: 25%;
+  }
+
+  .tablet\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .tablet\:flex-row{
     flex-direction: row;
+  }
+
+  .tablet\:gap-16{
+    gap: 4rem;
+  }
+
+  .tablet\:gap-12{
+    gap: 3rem;
   }
 
   .tablet\:p-4{
@@ -1491,16 +1697,78 @@ video {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .tablet\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .tablet\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 750px){
+  .laptopSm\:top-1\/3{
+    top: 33.333333%;
+  }
+
+  .laptopSm\:left-\[38\%\]{
+    left: 38%;
+  }
+
   .laptopSm\:mx-12{
     margin-left: 3rem;
     margin-right: 3rem;
   }
 
+  .laptopSm\:mt-20{
+    margin-top: 5rem;
+  }
+
+  .laptopSm\:mb-16{
+    margin-bottom: 4rem;
+  }
+
   .laptopSm\:flex{
     display: flex;
+  }
+
+  .laptopSm\:grid{
+    display: grid;
+  }
+
+  .laptopSm\:h-3\/5{
+    height: 60%;
+  }
+
+  .laptopSm\:h-full{
+    height: 100%;
+  }
+
+  .laptopSm\:h-3\/4{
+    height: 75%;
+  }
+
+  .laptopSm\:w-1\/4{
+    width: 25%;
+  }
+
+  .laptopSm\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .laptopSm\:flex-row{
+    flex-direction: row;
+  }
+
+  .laptopSm\:gap-24{
+    gap: 6rem;
+  }
+
+  .laptopSm\:gap-12{
+    gap: 3rem;
   }
 
   .laptopSm\:px-12{
@@ -1527,12 +1795,25 @@ video {
     font-size: 3rem;
     line-height: 1;
   }
+
+  .laptopSm\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 900px){
   .laptopMd\:mx-\[60px\]{
     margin-left: 60px;
     margin-right: 60px;
+  }
+
+  .laptopMd\:h-full{
+    height: 100%;
+  }
+
+  .laptopMd\:gap-32{
+    gap: 8rem;
   }
 
   .laptopMd\:px-\[60px\]{
