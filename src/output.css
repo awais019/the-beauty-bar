@@ -598,6 +598,26 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.col-start-1{
+  grid-column-start: 1;
+}
+
+.col-start-2{
+  grid-column-start: 2;
+}
+
+.col-end-4{
+  grid-column-end: 4;
+}
+
+.col-end-3{
+  grid-column-end: 3;
+}
+
+.row-start-1{
+  grid-row-start: 1;
+}
+
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -817,6 +837,14 @@ video {
        column-gap: 2.5rem;
 }
 
+.place-self-center{
+  place-self: center;
+}
+
+.self-center{
+  align-self: center;
+}
+
 .rounded-\[100px\]{
   border-radius: 100px;
 }
@@ -1010,6 +1038,10 @@ video {
   text-align: center;
 }
 
+.align-middle{
+  vertical-align: middle;
+}
+
 .font-\[\'Montserrat\'\]{
   font-family: 'Montserrat';
 }
@@ -1060,6 +1092,11 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold{
@@ -1214,6 +1251,26 @@ video {
 }
 
 @media not all and (min-width: 630px){
+  .max-mobile\:col-start-2{
+    grid-column-start: 2;
+  }
+
+  .max-mobile\:col-start-1{
+    grid-column-start: 1;
+  }
+
+  .max-mobile\:col-end-4{
+    grid-column-end: 4;
+  }
+
+  .max-mobile\:row-start-1{
+    grid-row-start: 1;
+  }
+
+  .max-mobile\:place-self-center{
+    place-self: center;
+  }
+
   .max-mobile\:border{
     border-width: 1px;
   }
@@ -1311,6 +1368,16 @@ video {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .mobileSm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .mobileSm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 630px){
@@ -1371,6 +1438,11 @@ video {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .mobile\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 690px){
@@ -1414,6 +1486,11 @@ video {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .tablet\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 750px){
@@ -1444,6 +1521,11 @@ video {
   .laptopSm\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .laptopSm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
