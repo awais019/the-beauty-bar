@@ -9,6 +9,7 @@ module.exports = {
         "sonic-silver": "#767676",
         "deep-taupe": "#7D6C60",
         "warm-gray": "#A9A9A9",
+        arsenic: "#414141",
       },
       fontFamily: {
         "logo-font": ["'Poiret One'"],

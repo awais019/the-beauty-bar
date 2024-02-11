@@ -86,11 +86,11 @@
       </button>
     </header>
     <main>
-      <section
-        class="flex flex-row-reverse relative laptopMd:px-[60px] px-8 laptopSm:px-12"
-      >
+      <section class="relative flex flex-row-reverse">
         <img src="../images/banner.png" alt="Banner Image" />
-        <div class="flex items-center px-[60px] absolute inset-0">
+        <div
+          class="flex items-center laptopMd:px-[60px] px-8 py-16 laptopSm:px-12 absolute inset-0 top-10 max-mobile:justify-center"
+        >
           <div>
             <p class="mb-4 font-light">
               "Beauty is confidence in your own skin".
@@ -170,12 +170,12 @@
         </span>
       </section>
       <section
-        class="py-12 mobileSm:py-16 mobile:py-20 tablet:py-28 flex flex-col items-center justify-center laptopMd:flex-row gap-12 laptopSm:gap-16 laptopMd:gap-20 laptopMd:px-[60px] px-8 laptopSm:px-12"
+        class="py-12 mobileSm:py-16 mobile:py-20 tablet:py-28 flex flex-col items-center justify-center laptopMd:flex-row gap-12 laptopSm:gap-16 laptopMd:gap-20 laptopMd:px-[60px] px-8 laptopSm:px-12 overflow-hidden"
       >
         <img
           src="../images/about.png"
           alt="about"
-          class="max-w-md tablet:max-w-lg laptopSm:max-w-xl"
+          class="max-w-xs mobile:max-w-md tablet:max-w-lg laptopSm:max-w-xl"
         />
         <div class="font-['Montserrat']">
           <h2
@@ -210,7 +210,7 @@
           </a>
         </div>
       </section>
-      <section class="py-12 mobileSm:py-16 mobile:py-20 tablet:py-28">
+      <section class="pb-12 mobileSm:pb-16 mobile:pb-20 tablet:pb-28">
         <h2
           class="text-4xl text-center font-logo-font text-shadow mobileSm:text-5xl tablet:text-6xl laptopSm:text-7xl"
         >
@@ -266,25 +266,29 @@
             Find Out How Our Platform Helps You Get Things Done
           </p>
         </div>
-        <div class="grid grid-cols-3 gap-6">
-          <div class="flex flex-col gap-10 py-9">
+        <div class="grid grid-cols-3 gap-x-6">
+          <div
+            class="flex gap-4 mobile:gap-8 tablet:gap-10 max-mobile:col-start-1 max-mobile:col-end-4 mobile:flex-col py-9"
+          >
             <p
-              class="border-r-4 mobileSm:text-lg mobile:text-xl tablet:text-2xl border-black-olive"
+              class="text-sm max-mobile:border-b-4 mobile:border-r-4 mobileSm:text-lg mobile:text-xl tablet:text-2xl border-black-olive"
             >
               BOOK NOW
             </p>
             <p
-              class="border-r-4 mobileSm:text-lg mobile:text-xl tablet:text-2xl border-warm-gray"
+              class="text-sm max-mobile:border-b-4 mobile:border-r-4 mobileSm:text-lg mobile:text-xl tablet:text-2xl border-warm-gray"
             >
               FREE CONSULTATION
             </p>
             <p
-              class="border-r-4 mobileSm:text-lg mobile:text-xl tablet:text-2xl border-warm-gray"
+              class="text-sm max-mobile:border-b-4 mobile:border-r-4 mobileSm:text-lg mobile:text-xl tablet:text-2xl border-warm-gray"
             >
               BROWSE THE SITE
             </p>
           </div>
-          <div class="py-6 max-mobile:col-start-2 max-mobile:col-end-4">
+          <div
+            class="py-3 mobile:py-6 max-mobile:col-start-1 max-mobile:col-end-4"
+          >
             <p class="text-lg font-bold mobile:text-xl tablet:text-2xl">
               Are you ready to schedule your service? Visit our website and make
               your booking today for an exceptional experience.
@@ -311,7 +315,9 @@
       >
         <div class="mx-auto text-center max-w-fit">
           <h2 class="leading-tight text-black">Testimonials</h2>
-          <p class="text-5xl font-bold text-deep-taupe">
+          <p
+            class="text-2xl font-bold mobile:text-5xl tablet:text-4xl laptopSm:text-5xl text-deep-taupe"
+          >
             What our Customers says...
           </p>
         </div>
@@ -378,7 +384,9 @@
     <footer
       class="bg-tuscany flex flex-col gap-10 laptopMd:p-[60px] p-8 laptopSm:p-12"
     >
-      <div class="flex text-2xl text-white gap-14">
+      <div
+        class="flex flex-col text-white mobile:text-lg tablet:text-xl laptopSm:text-2xl mobileSm:flex-row gap-14"
+      >
         <a href="#" class="flex items-center gap-4 p-3 border border-shadow">
           <span>Book Now</span>
           <svg
@@ -400,7 +408,11 @@
         class="flex flex-col justify-between gap-4 text-2xl font-bold text-white mobile:flex-row"
       >
         <div class="flex flex-col gap-9">
-          <h3 class="text-4xl text-black">Our Hours</h3>
+          <h3
+            class="text-xl text-black mobile:2xl tablet:text-3xl laptopSm:text-4xl"
+          >
+            Our Hours
+          </h3>
           <p class="flex flex-col gap-6">
             <span>MON-SAT 08:00 - 20:00</span>
 
@@ -408,8 +420,12 @@
           </p>
         </div>
         <div class="flex flex-col gap-9">
-          <h3 class="text-4xl text-black">Useful Links</h3>
-          <div class="grid grid-cols-3 gap-10">
+          <h3
+            class="text-xl text-black mobile:2xl tablet:text-3xl laptopSm:text-4xl"
+          >
+            Useful Links
+          </h3>
+          <div class="grid gap-10 mobileSm:grid-cols-3">
             <a href="#">Home</a>
             <a href="#">About Us</a>
             <a href="#">Services</a>
@@ -419,7 +435,11 @@
           </div>
         </div>
         <div class="flex flex-col gap-6">
-          <h3 class="text-4xl text-black">Follow Us</h3>
+          <h3
+            class="text-xl text-black mobile:2xl tablet:text-3xl laptopSm:text-4xl"
+          >
+            Follow Us
+          </h3>
           <div class="flex gap-6">
             <a href="#"
               ><svg
