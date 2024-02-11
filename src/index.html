@@ -8,13 +8,17 @@
   </head>
   <body class="max-w-screen-xl mx-auto text-black-olive">
     <header
-      class="bg-tuscany p-4 rounded-lg flex items-center justify-between shadow-header relative top-10 z-10 mx-[60px]"
+      class="bg-tuscany p-3 tablet:p-4 rounded-lg items-center justify-between shadow-header relative top-10 z-10 laptopMd:mx-[60px] hidden mobile:flex mx-8 laptopSm:mx-12"
     >
-      <div class="text-[40px] leading-9 font-logo-font">The Beauty Bar</div>
-      <nav>
+      <div
+        class="text-lg tablet:text-2xl laptopSm:text-3xl laptopMd:text-[40px] leading-9 font-logo-font"
+      >
+        The Beauty Bar
+      </div>
+      <nav class="text-xs tablet:text-sm laptopSm:text-base">
         <ul class="flex items-center gap-6 text-white">
           <li>
-            <a href="#" class="">Home</a>
+            <a href="#">Home</a>
           </li>
           <li>
             <a href="#" class="flex items-center gap-2">
@@ -34,15 +38,18 @@
             </a>
           </li>
           <li>
-            <a href="#" class="">About</a>
+            <a href="#">About</a>
           </li>
           <li>
-            <a href="#" class="">Contact us</a>
+            <a href="#">Contact us</a>
           </li>
         </ul>
       </nav>
 
-      <a href="#" class="flex items-center gap-2">
+      <a
+        href="#"
+        class="flex items-center gap-2 text-xs tablet:text-sm laptopMd:text-base"
+      >
         <span>Book Now </span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -58,8 +65,30 @@
         </svg>
       </a>
     </header>
+    <header
+      class="absolute z-10 px-3 py-1 mx-5 rounded-lg mobile:hidden max-w-fit shadow-header top-5"
+    >
+      <button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
+    </header>
     <main>
-      <section class="flex flex-row-reverse relative px-[60px]">
+      <section
+        class="flex flex-row-reverse relative laptopMd:px-[60px] px-8 laptopSm:px-12"
+      >
         <img src="../images/banner.png" alt="Banner Image" />
         <div class="flex items-center px-[60px] absolute inset-0">
           <div>
@@ -136,7 +165,9 @@
           </svg>
         </span>
       </section>
-      <section class="py-28 px-[60px] flex items-center justify-between">
+      <section
+        class="py-28 flex items-center justify-between laptopMd:px-[60px] px-8 laptopSm:px-12"
+      >
         <div>
           <div class="relative max-w-fit">
             <img
@@ -226,7 +257,7 @@
           </div>
         </div>
       </section>
-      <section class="px-[60px]">
+      <section class="laptopMd:px-[60px] px-8 laptopSm:px-12">
         <div class="mb-6">
           <h2 class="text-5xl leading-tight font-logo-font">How it Work?</h2>
           <p>Find Out How Our Platform Helps You Get Things Done</p>

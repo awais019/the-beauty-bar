@@ -24,6 +24,12 @@ module.exports = {
         gradient: "linear-gradient(90deg, #C0B6AA 50%, #806F62 100%)",
         gradient1: "linear-gradient(180deg, #C0B6AA 0%, #837265 100%)",
       },
+      screens: {
+        laptopMd: "900px",
+        laptopSm: "750px",
+        tablet: "690px",
+        mobile: "630px",
+      },
     },
   },
   plugins: [],
