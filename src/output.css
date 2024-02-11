@@ -797,6 +797,28 @@ video {
   gap: 1.5rem;
 }
 
+.gap-14{
+  gap: 3.5rem;
+}
+
+.gap-9{
+  gap: 2.25rem;
+}
+
+.gap-8{
+  gap: 2rem;
+}
+
+.gap-x-20{
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+.gap-x-10{
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -889,6 +911,10 @@ video {
   padding: 0.75rem;
 }
 
+.p-\[60px\]{
+  padding: 60px;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -949,8 +975,22 @@ video {
   padding-bottom: 2.25rem;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pt-8{
   padding-top: 2rem;
+}
+
+.pt-28{
+  padding-top: 7rem;
 }
 
 .text-center{
