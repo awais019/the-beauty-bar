@@ -975,6 +975,30 @@ video {
   background-image: url('../images/services-banner1.png');
 }
 
+.bg-\[url\(\'\.\.\/images\/nails-1\.png\'\)\]{
+  background-image: url('../images/nails-1.png');
+}
+
+.bg-\[url\(\.\.\/images\/nails-2\.png\)\]{
+  background-image: url(../images/nails-2.png);
+}
+
+.bg-\[url\(\.\.\/images\/nails-3\.png\)\]{
+  background-image: url(../images/nails-3.png);
+}
+
+.bg-\[url\(\.\.\/images\/nail-4\.png\)\]{
+  background-image: url(../images/nail-4.png);
+}
+
+.bg-\[url\(\.\.\/images\/nails-5\.png\)\]{
+  background-image: url(../images/nails-5.png);
+}
+
+.bg-\[url\(\.\.\/images\/nails-4\.png\)\]{
+  background-image: url(../images/nails-4.png);
+}
+
 .bg-cover{
   background-size: cover;
 }
