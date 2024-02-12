@@ -15,6 +15,7 @@ module.exports = {
         "philippine-silver": "#B3B3B3",
         "white-coffee": "#E4DDD5",
         "granite-gray": "#66615C",
+        "floral-white": "#FCF8EF",
       },
       fontFamily: {
         "logo-font": ["'Poiret One'"],
@@ -28,6 +29,7 @@ module.exports = {
         about: "-20px -20px 30px 0px rgba(0, 0, 0, 0.16)",
         btn: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
         bannerImage: "1px 0px 43.2px rgba(0, 0, 0, 0.69)",
+        vision: "20px 20px 30px 0px rgba(0, 0, 0, 0.16)",
       },
       backgroundImage: {
         gradient: "linear-gradient(90deg, #C0B6AA 50%, #806F62 100%)",
