@@ -13,9 +13,11 @@ module.exports = {
         "black-shadows": "#C2B9B2",
         snow: "#FFFBFB",
         "philippine-silver": "#B3B3B3",
+        "white-coffee": "#E4DDD5",
       },
       fontFamily: {
         "logo-font": ["'Poiret One'"],
+        "playfair-display": ["Playfair Display"],
         sans: ["Lato", "sans-serif"],
       },
       boxShadow: {
