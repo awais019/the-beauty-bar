@@ -667,8 +667,28 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+
+.mr-auto{
+  margin-right: auto;
+}
+
+.ml-auto{
+  margin-left: auto;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .block{
   display: block;
+}
+
+.inline-block{
+  display: inline-block;
 }
 
 .flex{
@@ -730,6 +750,10 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-row-reverse{
   flex-direction: row-reverse;
 }
@@ -740,6 +764,14 @@ video {
 
 .flex-wrap{
   flex-wrap: wrap;
+}
+
+.place-content-end{
+  place-content: end;
+}
+
+.place-items-end{
+  place-items: end;
 }
 
 .place-items-center{
@@ -814,9 +846,21 @@ video {
   gap: 2.25rem;
 }
 
+.gap-28{
+  gap: 7rem;
+}
+
+.gap-24{
+  gap: 6rem;
+}
+
 .gap-x-6{
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
+}
+
+.place-self-start{
+  place-self: start;
 }
 
 .overflow-hidden{
@@ -1047,6 +1091,10 @@ video {
 
 .pt-8{
   padding-top: 2rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
 }
 
 .text-center{
@@ -1458,6 +1506,10 @@ video {
     padding-top: 5rem;
   }
 
+  .mobile\:pb-12{
+    padding-bottom: 3rem;
+  }
+
   .mobile\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1546,6 +1598,10 @@ video {
     padding-top: 10rem;
   }
 
+  .tablet\:pb-16{
+    padding-bottom: 4rem;
+  }
+
   .tablet\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1602,6 +1658,10 @@ video {
 
   .laptopSm\:top-1\/3{
     top: 33.333333%;
+  }
+
+  .laptopSm\:col-span-2{
+    grid-column: span 2 / span 2;
   }
 
   .laptopSm\:mx-12{
@@ -1683,6 +1743,10 @@ video {
     padding-bottom: 5rem;
   }
 
+  .laptopSm\:pb-20{
+    padding-bottom: 5rem;
+  }
+
   .laptopSm\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1720,6 +1784,10 @@ video {
 }
 
 @media (min-width: 900px){
+  .laptopMd\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
   .laptopMd\:mx-\[60px\]{
     margin-left: 60px;
     margin-right: 60px;
@@ -1737,6 +1805,10 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .laptopMd\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .laptopMd\:flex-row{
     flex-direction: row;
   }
@@ -1747,6 +1819,10 @@ video {
 
   .laptopMd\:gap-32{
     gap: 8rem;
+  }
+
+  .laptopMd\:place-self-start{
+    place-self: start;
   }
 
   .laptopMd\:p-\[60px\]{
