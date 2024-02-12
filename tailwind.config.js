@@ -14,6 +14,7 @@ module.exports = {
         snow: "#FFFBFB",
         "philippine-silver": "#B3B3B3",
         "white-coffee": "#E4DDD5",
+        "granite-gray": "#66615C",
       },
       fontFamily: {
         "logo-font": ["'Poiret One'"],
@@ -34,6 +35,7 @@ module.exports = {
         servicesBanner: "url('../images/services-banner1.png')",
       },
       screens: {
+        desktop: "1120px",
         laptopLg: "1000px",
         laptopMd: "900px",
         laptopSm: "750px",
