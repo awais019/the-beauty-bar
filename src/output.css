@@ -677,6 +677,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+
 .block{
   display: block;
 }
@@ -822,6 +826,14 @@ video {
 
 .gap-9{
   gap: 2.25rem;
+}
+
+.gap-20{
+  gap: 5rem;
+}
+
+.gap-24{
+  gap: 6rem;
 }
 
 .gap-x-6{
@@ -1094,6 +1106,10 @@ video {
   font-family: Playfair Display;
 }
 
+.font-montserrat{
+  font-family: Montserrat;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1128,6 +1144,11 @@ video {
   line-height: 1rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1158,6 +1179,22 @@ video {
 
 .leading-tight{
   line-height: 1.25;
+}
+
+.leading-loose{
+  line-height: 2;
+}
+
+.leading-none{
+  line-height: 1;
+}
+
+.leading-normal{
+  line-height: 1.5;
+}
+
+.leading-snug{
+  line-height: 1.375;
 }
 
 .text-\[\#080808\]{
@@ -1539,6 +1576,10 @@ video {
     left: 37%;
   }
 
+  .tablet\:flex{
+    display: flex;
+  }
+
   .tablet\:max-w-lg{
     max-width: 32rem;
   }
@@ -1547,12 +1588,20 @@ video {
     max-width: 28rem;
   }
 
+  .tablet\:flex-row{
+    flex-direction: row;
+  }
+
   .tablet\:gap-10{
     gap: 2.5rem;
   }
 
   .tablet\:gap-16{
     gap: 4rem;
+  }
+
+  .tablet\:gap-24{
+    gap: 6rem;
   }
 
   .tablet\:p-4{

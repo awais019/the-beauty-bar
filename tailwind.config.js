@@ -18,6 +18,7 @@ module.exports = {
       fontFamily: {
         "logo-font": ["'Poiret One'"],
         "playfair-display": ["Playfair Display"],
+        montserrat: ["Montserrat"],
         sans: ["Lato", "sans-serif"],
       },
       boxShadow: {
