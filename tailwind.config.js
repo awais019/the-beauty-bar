@@ -11,6 +11,8 @@ module.exports = {
         "warm-gray": "#A9A9A9",
         arsenic: "#414141",
         "black-shadows": "#C2B9B2",
+        snow: "#FFFBFB",
+        "philippine-silver": "#B3B3B3",
       },
       fontFamily: {
         "logo-font": ["'Poiret One'"],
@@ -18,8 +20,8 @@ module.exports = {
       },
       boxShadow: {
         header: "2px 1px 7px 0px rgba(0, 0, 0, 0.25)",
-        about1: "1px -1px 10.1px rgba(0, 0, 0, 0.85)",
-        about2: "-20px -20px 30px 0px rgba(0, 0, 0, 0.16)",
+        img: "1px -1px 10.1px rgba(0, 0, 0, 0.85)",
+        about: "-20px -20px 30px 0px rgba(0, 0, 0, 0.16)",
         btn: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
         bannerImage: "1px 0px 43.2px rgba(0, 0, 0, 0.69)",
       },
