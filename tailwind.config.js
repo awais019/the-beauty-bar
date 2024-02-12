@@ -10,6 +10,7 @@ module.exports = {
         "deep-taupe": "#7D6C60",
         "warm-gray": "#A9A9A9",
         arsenic: "#414141",
+        "black-shadows": "#C2B9B2",
       },
       fontFamily: {
         "logo-font": ["'Poiret One'"],
@@ -20,12 +21,15 @@ module.exports = {
         about1: "1px -1px 10.1px rgba(0, 0, 0, 0.85)",
         about2: "-20px -20px 30px 0px rgba(0, 0, 0, 0.16)",
         btn: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+        bannerImage: "1px 0px 43.2px rgba(0, 0, 0, 0.69)",
       },
       backgroundImage: {
         gradient: "linear-gradient(90deg, #C0B6AA 50%, #806F62 100%)",
         gradient1: "linear-gradient(180deg, #C0B6AA 0%, #837265 100%)",
+        servicesBanner: "url('../images/services-banner1.png')",
       },
       screens: {
+        laptopLg: "1000px",
         laptopMd: "900px",
         laptopSm: "750px",
         tablet: "690px",
