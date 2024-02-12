@@ -655,6 +655,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -663,32 +667,16 @@ video {
   margin-top: 3rem;
 }
 
-.mt-6{
-  margin-top: 1.5rem;
-}
-
-.mb-7{
-  margin-bottom: 1.75rem;
-}
-
-.mr-auto{
-  margin-right: auto;
-}
-
-.ml-auto{
-  margin-left: auto;
-}
-
 .mt-3{
   margin-top: 0.75rem;
 }
 
-.block{
-  display: block;
+.mt-6{
+  margin-top: 1.5rem;
 }
 
-.inline-block{
-  display: inline-block;
+.block{
+  display: block;
 }
 
 .flex{
@@ -750,10 +738,6 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .flex-row-reverse{
   flex-direction: row-reverse;
 }
@@ -764,14 +748,6 @@ video {
 
 .flex-wrap{
   flex-wrap: wrap;
-}
-
-.place-content-end{
-  place-content: end;
-}
-
-.place-items-end{
-  place-items: end;
 }
 
 .place-items-center{
@@ -846,21 +822,9 @@ video {
   gap: 2.25rem;
 }
 
-.gap-28{
-  gap: 7rem;
-}
-
-.gap-24{
-  gap: 6rem;
-}
-
 .gap-x-6{
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
-}
-
-.place-self-start{
-  place-self: start;
 }
 
 .overflow-hidden{
@@ -947,6 +911,10 @@ video {
   background-image: url('../images/lashes-1.png');
 }
 
+.bg-\[url\(\'\.\.\/images\/nails-1\.png\'\)\]{
+  background-image: url('../images/nails-1.png');
+}
+
 .bg-\[url\(\.\.\/images\/lashes-2\.png\)\]{
   background-image: url(../images/lashes-2.png);
 }
@@ -963,6 +931,22 @@ video {
   background-image: url(../images/lashes-5.png);
 }
 
+.bg-\[url\(\.\.\/images\/nails-2\.png\)\]{
+  background-image: url(../images/nails-2.png);
+}
+
+.bg-\[url\(\.\.\/images\/nails-3\.png\)\]{
+  background-image: url(../images/nails-3.png);
+}
+
+.bg-\[url\(\.\.\/images\/nails-4\.png\)\]{
+  background-image: url(../images/nails-4.png);
+}
+
+.bg-\[url\(\.\.\/images\/nails-5\.png\)\]{
+  background-image: url(../images/nails-5.png);
+}
+
 .bg-gradient{
   background-image: linear-gradient(90deg, #C0B6AA 50%, #806F62 100%);
 }
@@ -973,30 +957,6 @@ video {
 
 .bg-servicesBanner{
   background-image: url('../images/services-banner1.png');
-}
-
-.bg-\[url\(\'\.\.\/images\/nails-1\.png\'\)\]{
-  background-image: url('../images/nails-1.png');
-}
-
-.bg-\[url\(\.\.\/images\/nails-2\.png\)\]{
-  background-image: url(../images/nails-2.png);
-}
-
-.bg-\[url\(\.\.\/images\/nails-3\.png\)\]{
-  background-image: url(../images/nails-3.png);
-}
-
-.bg-\[url\(\.\.\/images\/nail-4\.png\)\]{
-  background-image: url(../images/nail-4.png);
-}
-
-.bg-\[url\(\.\.\/images\/nails-5\.png\)\]{
-  background-image: url(../images/nails-5.png);
-}
-
-.bg-\[url\(\.\.\/images\/nails-4\.png\)\]{
-  background-image: url(../images/nails-4.png);
 }
 
 .bg-cover{
@@ -1029,11 +989,6 @@ video {
 
 .p-8{
   padding: 2rem;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .px-4{
@@ -1105,6 +1060,10 @@ video {
   padding-bottom: 3rem;
 }
 
+.pb-8{
+  padding-bottom: 2rem;
+}
+
 .pt-12{
   padding-top: 3rem;
 }
@@ -1115,10 +1074,6 @@ video {
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pb-8{
-  padding-bottom: 2rem;
 }
 
 .text-center{
@@ -1279,12 +1234,6 @@ video {
 .before\:inset-0::before{
   content: var(--tw-content);
   inset: 0px;
-}
-
-.before\:bg-\[\#B3B3B3\]::before{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(179 179 179 / var(--tw-bg-opacity));
 }
 
 .before\:bg-philippine-silver::before{
@@ -1522,16 +1471,16 @@ video {
     padding-bottom: 1.5rem;
   }
 
+  .mobile\:pb-12{
+    padding-bottom: 3rem;
+  }
+
   .mobile\:pb-20{
     padding-bottom: 5rem;
   }
 
   .mobile\:pt-20{
     padding-top: 5rem;
-  }
-
-  .mobile\:pb-12{
-    padding-bottom: 3rem;
   }
 
   .mobile\:text-2xl{
@@ -1610,6 +1559,10 @@ video {
     padding-bottom: 7rem;
   }
 
+  .tablet\:pb-16{
+    padding-bottom: 4rem;
+  }
+
   .tablet\:pb-28{
     padding-bottom: 7rem;
   }
@@ -1620,10 +1573,6 @@ video {
 
   .tablet\:pt-40{
     padding-top: 10rem;
-  }
-
-  .tablet\:pb-16{
-    padding-bottom: 4rem;
   }
 
   .tablet\:text-2xl{
@@ -1682,10 +1631,6 @@ video {
 
   .laptopSm\:top-1\/3{
     top: 33.333333%;
-  }
-
-  .laptopSm\:col-span-2{
-    grid-column: span 2 / span 2;
   }
 
   .laptopSm\:mx-12{
@@ -1847,6 +1792,10 @@ video {
 
   .laptopMd\:place-self-start{
     place-self: start;
+  }
+
+  .laptopMd\:place-self-end{
+    place-self: end;
   }
 
   .laptopMd\:p-\[60px\]{
