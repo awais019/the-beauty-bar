@@ -31,11 +31,13 @@ module.exports = {
         bannerImage: "1px 0px 43.2px rgba(0, 0, 0, 0.69)",
         vision: "20px 20px 30px 0px rgba(0, 0, 0, 0.16)",
         contact: "0px 15px 50px rgba(0, 0, 0, 0.24)",
+        contactForm: "0px 34px 50px 0px rgba(68, 46, 26, 0.12)",
       },
       backgroundImage: {
         gradient: "linear-gradient(90deg, #C0B6AA 50%, #806F62 100%)",
         gradient1: "linear-gradient(180deg, #C0B6AA 0%, #837265 100%)",
         servicesBanner: "url('../images/services-banner1.png')",
+        contactForm: "linear-gradient(180deg, #BCB2A6 0%, #8B7A6D 100%)",
       },
       screens: {
         desktop: "1120px",

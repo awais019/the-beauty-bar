@@ -552,6 +552,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .absolute{
   position: absolute;
 }
@@ -619,6 +631,26 @@ video {
 
 .top-9{
   top: 2.25rem;
+}
+
+.left-2{
+  left: 0.5rem;
+}
+
+.top-2{
+  top: 0.5rem;
+}
+
+.left-3{
+  left: 0.75rem;
+}
+
+.top-3{
+  top: 0.75rem;
+}
+
+.left-4{
+  left: 1rem;
 }
 
 .z-10{
@@ -885,6 +917,10 @@ video {
   border-radius: 100px;
 }
 
+.rounded-\[20px\]{
+  border-radius: 20px;
+}
+
 .rounded-\[50px\]{
   border-radius: 50px;
 }
@@ -907,6 +943,10 @@ video {
 
 .rounded-md{
   border-radius: 0.375rem;
+}
+
+.rounded-sm{
+  border-radius: 0.125rem;
 }
 
 .border{
@@ -940,6 +980,11 @@ video {
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-gray-900{
+  --tw-border-opacity: 1;
+  border-color: rgb(17 24 39 / var(--tw-border-opacity));
 }
 
 .bg-\[\#E5DFD7\]{
@@ -1016,6 +1061,10 @@ video {
   background-image: url(../images/nails-5.png);
 }
 
+.bg-contactForm{
+  background-image: linear-gradient(180deg, #BCB2A6 0%, #8B7A6D 100%);
+}
+
 .bg-gradient{
   background-image: linear-gradient(90deg, #C0B6AA 50%, #806F62 100%);
 }
@@ -1048,6 +1097,10 @@ video {
   padding: 0.25rem;
 }
 
+.p-14{
+  padding: 3.5rem;
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -1058,6 +1111,10 @@ video {
 
 .p-8{
   padding: 2rem;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .px-12{
@@ -1133,6 +1190,11 @@ video {
 .py-9{
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .pb-12{
@@ -1226,6 +1288,10 @@ video {
   font-weight: 600;
 }
 
+.font-extrabold{
+  font-weight: 800;
+}
+
 .uppercase{
   text-transform: uppercase;
 }
@@ -1257,6 +1323,11 @@ video {
 .text-\[\#080808\]{
   --tw-text-opacity: 1;
   color: rgb(8 8 8 / var(--tw-text-opacity));
+}
+
+.text-\[\#111111\]{
+  --tw-text-opacity: 1;
+  color: rgb(17 17 17 / var(--tw-text-opacity));
 }
 
 .text-\[\#141414\]{
@@ -1314,6 +1385,11 @@ video {
   color: rgb(228 221 213 / var(--tw-text-opacity));
 }
 
+.text-gray-900{
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -1321,6 +1397,12 @@ video {
 .shadow-btn{
   --tw-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --tw-shadow-colored: 0px 4px 4px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-contact{
+  --tw-shadow: 0px 15px 50px rgba(0, 0, 0, 0.24);
+  --tw-shadow-colored: 0px 15px 50px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1336,9 +1418,9 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-contact{
-  --tw-shadow: 0px 15px 50px rgba(0, 0, 0, 0.24);
-  --tw-shadow-colored: 0px 15px 50px var(--tw-shadow-color);
+.shadow-contactForm{
+  --tw-shadow: 0px 34px 50px 0px rgba(68, 46, 26, 0.12);
+  --tw-shadow-colored: 0px 34px 50px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1405,6 +1487,11 @@ video {
 .after\:content-\[url\(\'\.\.\/images\/close-quote\.png\'\)\]::after{
   --tw-content: url('../images/close-quote.png');
   content: var(--tw-content);
+}
+
+.focus\:outline-none:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 @media not all and (min-width: 1000px){
@@ -1518,6 +1605,11 @@ video {
     padding-bottom: 4rem;
   }
 
+  .mobileSm\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .mobileSm\:pb-16{
     padding-bottom: 4rem;
   }
@@ -1609,10 +1701,6 @@ video {
     flex-direction: column;
   }
 
-  .mobile\:items-center{
-    align-items: center;
-  }
-
   .mobile\:gap-12{
     gap: 3rem;
   }
@@ -1637,6 +1725,11 @@ video {
   .mobile\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .mobile\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .mobile\:py-12{
@@ -1719,6 +1812,22 @@ video {
     margin-top: 4rem;
   }
 
+  .tablet\:w-\[70\%\]{
+    width: 70%;
+  }
+
+  .tablet\:w-\[60\%\]{
+    width: 60%;
+  }
+
+  .tablet\:w-\[50\%\]{
+    width: 50%;
+  }
+
+  .tablet\:max-w-\[60\%\]{
+    max-width: 60%;
+  }
+
   .tablet\:max-w-lg{
     max-width: 32rem;
   }
@@ -1747,6 +1856,10 @@ video {
     gap: 6rem;
   }
 
+  .tablet\:gap-5{
+    gap: 1.25rem;
+  }
+
   .tablet\:p-4{
     padding: 1rem;
   }
@@ -1769,6 +1882,11 @@ video {
   .tablet\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .tablet\:py-14{
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 
   .tablet\:py-16{

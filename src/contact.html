@@ -135,9 +135,9 @@
         </a>
       </div>
     </header>
-    <main>
+    <main class="font-montserrat">
       <section
-        class="px-12 py-12 text-center text-white mobileSm:px-16 mobileSm:py-16 mobile:px-20 mobile:py-20 tablet:px-32 laptopSm:px-48 tablet:py-44 laptopSm:py-48 laptopMd:py-52 laptopMd:px-56 laptopLg:px-64 bg-shadow font-montserrat"
+        class="px-12 py-12 text-center text-white mobileSm:px-16 mobileSm:py-16 mobile:px-20 mobile:py-20 tablet:px-32 laptopSm:px-48 tablet:py-44 laptopSm:py-48 laptopMd:py-52 laptopMd:px-56 laptopLg:px-64 bg-shadow"
       >
         <p class="font-semibold uppercase">get in touch with us</p>
         <h1
@@ -147,7 +147,7 @@
         </h1>
       </section>
       <section
-        class="py-12 mobileSm:py-16 mobile:py-20 tablet:py-28 laptopMd:px-[60px] px-8 laptopSm:px-12 flex flex-col laptopSm:flex-row gap-7 tablet:gap-14 laptopSm:gap-20 font-montserrat items-center"
+        class="py-12 mobileSm:py-16 mobile:py-20 tablet:py-28 laptopMd:px-[60px] px-8 laptopSm:px-12 flex flex-col laptopSm:flex-row gap-7 tablet:gap-14 laptopSm:gap-20 items-center"
       >
         <div class="relative">
           <img src="../images/contact-1.png" alt="contact-1 image" />
@@ -280,6 +280,201 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <section
+        class="py-6 mobileSm:py-8 mobile:py-10 tablet:py-14 laptopMd:px-[60px] px-8 laptopSm:px-12 bg-contactForm flex flex-col items-center gap-14"
+      >
+        <div
+          class="flex flex-col items-center gap-2 tablet:gap-5 tablet:max-w-[60%] text-center"
+        >
+          <h4
+            class="text-2xl font-bold text-white mobile:text-3xl tablet:text-4xl laptopSm:text-5xl font-playfair-display"
+          >
+            Get in touch
+          </h4>
+          <p class="text-[#111111] text-lg">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form.
+          </p>
+        </div>
+        <form
+          class="bg-white p-14 tablet:w-[50%] rounded-[20px] shadow-contactForm text-gray-900 flex flex-col gap-4"
+        >
+          <div class="relative p-2 border border-gray-900 rounded-md">
+            <svg
+              width="17"
+              height="15"
+              viewBox="0 0 17 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute top-3 left-3"
+            >
+              <path
+                d="M13.1212 12.9126V11.7124C13.1212 11.0758 12.8282 10.4652 12.3068 10.0151C11.7854 9.56491 11.0782 9.31201 10.3409 9.31201H4.78029C4.04291 9.31201 3.33573 9.56491 2.81433 10.0151C2.29292 10.4652 2 11.0758 2 11.7124V12.9126"
+                stroke="#7F6D61"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7.78029 6.91156C9.3158 6.91156 10.5606 5.83688 10.5606 4.5112C10.5606 3.18552 9.3158 2.11084 7.78029 2.11084C6.24478 2.11084 5 3.18552 5 4.5112C5 5.83688 6.24478 6.91156 7.78029 6.91156Z"
+                stroke="#7F6D61"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <label for="name" class="sr-only">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              class="w-full px-6 focus:outline-none"
+            />
+          </div>
+          <div class="relative p-2 border border-gray-900 rounded-md">
+            <svg
+              width="17"
+              height="15"
+              viewBox="0 0 17 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute top-3 left-3"
+            >
+              <g clip-path="url(#clip0_122_211)">
+                <path
+                  d="M2.78028 2.75635H13.9014C14.666 2.75635 15.2916 3.29643 15.2916 3.95653V11.1576C15.2916 11.8177 14.666 12.3578 13.9014 12.3578H2.78028C2.0157 12.3578 1.39014 11.8177 1.39014 11.1576V3.95653C1.39014 3.29643 2.0157 2.75635 2.78028 2.75635Z"
+                  stroke="#7F6D61"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.2916 3.95654L8.34086 8.15717L1.39014 3.95654"
+                  stroke="#7F6D61"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_122_211">
+                  <rect
+                    width="16.6817"
+                    height="14.4022"
+                    fill="white"
+                    transform="translate(0 0.355957)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <label for="email" class="sr-only">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="w-full px-6 focus:outline-none"
+            />
+          </div>
+          <div class="relative p-2 border border-gray-900 rounded-md">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute top-3 left-3"
+            >
+              <g clip-path="url(#clip0_122_217)">
+                <path
+                  d="M17.8236 12.3703V14.4572C17.8243 14.651 17.7847 14.8427 17.7071 15.0202C17.6296 15.1978 17.5158 15.3571 17.3732 15.4881C17.2306 15.6191 17.0622 15.7188 16.8788 15.7808C16.6954 15.8429 16.5011 15.866 16.3083 15.8485C14.1694 15.6159 12.1149 14.8845 10.3098 13.7129C8.63041 12.6448 7.20656 11.2198 6.13939 9.53902C4.9647 7.72423 4.23367 5.65802 4.00552 3.50778C3.98815 3.31541 4.01099 3.12153 4.07259 2.93848C4.1342 2.75544 4.2332 2.58723 4.36332 2.44457C4.49343 2.30192 4.6518 2.18794 4.82834 2.1099C5.00488 2.03186 5.19572 1.99146 5.38871 1.99128H7.47393C7.81125 1.98796 8.13827 2.10751 8.39404 2.32765C8.6498 2.54778 8.81686 2.85349 8.86407 3.18779C8.95209 3.85565 9.11531 4.51141 9.35062 5.14255C9.44414 5.39154 9.46438 5.66213 9.40895 5.92228C9.35351 6.18243 9.22472 6.42122 9.03784 6.61036L8.1551 7.49383C9.14457 9.2354 10.5854 10.6774 12.3255 11.6677L13.2083 10.7842C13.3973 10.5972 13.6359 10.4683 13.8958 10.4128C14.1557 10.3573 14.4261 10.3776 14.6749 10.4712C15.3055 10.7067 15.9607 10.8701 16.628 10.9581C16.9657 11.0058 17.274 11.176 17.4945 11.4364C17.7149 11.6968 17.832 12.0291 17.8236 12.3703Z"
+                  stroke="#7F6D61"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_122_217">
+                  <rect
+                    x="0.921875"
+                    y="0.600098"
+                    width="16.6817"
+                    height="16.6955"
+                    rx="5"
+                    fill="white"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <label for="phone" class="sr-only">Phone</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Phone"
+              class="w-full px-6 focus:outline-none"
+            />
+          </div>
+          <div class="relative p-2 border border-gray-900 rounded-md">
+            <svg
+              width="16"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute top-3 left-3"
+            >
+              <g clip-path="url(#clip0_122_229)">
+                <path
+                  d="M7.32727 2.79395H2.6645C2.31117 2.79395 1.97231 2.91512 1.72247 3.13082C1.47263 3.34652 1.33228 3.63907 1.33228 3.94412V11.9953C1.33228 12.3004 1.47263 12.5929 1.72247 12.8086C1.97231 13.0243 2.31117 13.1455 2.6645 13.1455H11.99C12.3434 13.1455 12.6822 13.0243 12.9321 12.8086C13.1819 12.5929 13.3223 12.3004 13.3223 11.9953V7.96972"
+                  stroke="#7F6D61"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12.323 1.93129C12.588 1.7025 12.9474 1.57397 13.3222 1.57397C13.6969 1.57397 14.0564 1.7025 14.3214 1.93129C14.5863 2.16007 14.7352 2.47037 14.7352 2.79392C14.7352 3.11747 14.5863 3.42776 14.3214 3.65655L7.9933 9.11987L5.32886 9.69496L5.99497 7.39461L12.323 1.93129Z"
+                  stroke="#7F6D61"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_122_229">
+                  <rect
+                    y="0.493652"
+                    width="15.9867"
+                    height="13.8021"
+                    rx="5"
+                    fill="white"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <label for="note" class="sr-only">Note</label>
+            <textarea
+              name="note"
+              id="note"
+              placeholder="Any note for us"
+              class="w-full px-6 focus:outline-none"
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            name="submit"
+            id="submit"
+            class="py-3 text-sm font-extrabold text-white uppercase rounded-md bg-shadow"
+          />
+        </form>
       </section>
     </main>
 
