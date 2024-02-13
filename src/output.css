@@ -597,12 +597,20 @@ video {
   right: 25%;
 }
 
+.right-4{
+  right: 1rem;
+}
+
 .top-1\/4{
   top: 25%;
 }
 
 .top-10{
   top: 2.5rem;
+}
+
+.top-4{
+  top: 1rem;
 }
 
 .top-5{
@@ -1052,8 +1060,9 @@ video {
   padding: 2rem;
 }
 
-.p-12{
-  padding: 3rem;
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .px-4{
@@ -1124,16 +1133,6 @@ video {
 .py-9{
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
-}
-
-.px-80{
-  padding-left: 20rem;
-  padding-right: 20rem;
-}
-
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .pb-12{
@@ -1260,6 +1259,16 @@ video {
   color: rgb(8 8 8 / var(--tw-text-opacity));
 }
 
+.text-\[\#141414\]{
+  --tw-text-opacity: 1;
+  color: rgb(20 20 20 / var(--tw-text-opacity));
+}
+
+.text-\[\#422A3C\]{
+  --tw-text-opacity: 1;
+  color: rgb(66 42 60 / var(--tw-text-opacity));
+}
+
 .text-arsenic{
   --tw-text-opacity: 1;
   color: rgb(65 65 65 / var(--tw-text-opacity));
@@ -1327,6 +1336,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-contact{
+  --tw-shadow: 0px 15px 50px rgba(0, 0, 0, 0.24);
+  --tw-shadow-colored: 0px 15px 50px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition-transform{
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1390,11 +1405,6 @@ video {
 .after\:content-\[url\(\'\.\.\/images\/close-quote\.png\'\)\]::after{
   --tw-content: url('../images/close-quote.png');
   content: var(--tw-content);
-}
-
-.target\:px-56:target{
-  padding-left: 14rem;
-  padding-right: 14rem;
 }
 
 @media not all and (min-width: 1000px){
@@ -1498,23 +1508,14 @@ video {
     flex-direction: row;
   }
 
-  .mobileSm\:p-16{
-    padding: 4rem;
-  }
-
-  .mobileSm\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
   .mobileSm\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
   }
 
-  .mobileSm\:py-12{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  .mobileSm\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .mobileSm\:pb-16{
@@ -1608,6 +1609,10 @@ video {
     flex-direction: column;
   }
 
+  .mobile\:items-center{
+    align-items: center;
+  }
+
   .mobile\:gap-12{
     gap: 3rem;
   }
@@ -1624,13 +1629,14 @@ video {
     border-right-width: 4px;
   }
 
-  .mobile\:p-20{
-    padding: 5rem;
-  }
-
   .mobile\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .mobile\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .mobile\:py-12{
@@ -1646,21 +1652,6 @@ video {
   .mobile\:py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .mobile\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .mobile\:py-24{
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
-  .mobile\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
   }
 
   .mobile\:pb-12{
@@ -1716,6 +1707,14 @@ video {
     left: 37%;
   }
 
+  .tablet\:right-6{
+    right: 1.5rem;
+  }
+
+  .tablet\:top-6{
+    top: 1.5rem;
+  }
+
   .tablet\:mt-16{
     margin-top: 4rem;
   }
@@ -1736,6 +1735,10 @@ video {
     gap: 2.5rem;
   }
 
+  .tablet\:gap-14{
+    gap: 3.5rem;
+  }
+
   .tablet\:gap-16{
     gap: 4rem;
   }
@@ -1748,13 +1751,14 @@ video {
     padding: 1rem;
   }
 
-  .tablet\:p-64{
-    padding: 16rem;
-  }
-
   .tablet\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .tablet\:px-32{
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .tablet\:px-40{
@@ -1777,44 +1781,14 @@ video {
     padding-bottom: 7rem;
   }
 
-  .tablet\:py-64{
-    padding-top: 16rem;
-    padding-bottom: 16rem;
-  }
-
-  .tablet\:py-8{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .tablet\:px-64{
-    padding-left: 16rem;
-    padding-right: 16rem;
-  }
-
   .tablet\:py-44{
     padding-top: 11rem;
     padding-bottom: 11rem;
   }
 
-  .tablet\:px-56{
-    padding-left: 14rem;
-    padding-right: 14rem;
-  }
-
-  .tablet\:px-44{
-    padding-left: 11rem;
-    padding-right: 11rem;
-  }
-
-  .tablet\:px-36{
-    padding-left: 9rem;
-    padding-right: 9rem;
-  }
-
-  .tablet\:px-32{
-    padding-left: 8rem;
-    padding-right: 8rem;
+  .tablet\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .tablet\:pb-16{
@@ -1887,8 +1861,16 @@ video {
     left: 38%;
   }
 
+  .laptopSm\:right-8{
+    right: 2rem;
+  }
+
   .laptopSm\:top-1\/3{
     top: 33.333333%;
+  }
+
+  .laptopSm\:top-8{
+    top: 2rem;
   }
 
   .laptopSm\:col-start-3{
@@ -1960,16 +1942,16 @@ video {
     gap: 4rem;
   }
 
+  .laptopSm\:gap-20{
+    gap: 5rem;
+  }
+
   .laptopSm\:gap-24{
     gap: 6rem;
   }
 
   .laptopSm\:p-12{
     padding: 3rem;
-  }
-
-  .laptopSm\:p-72{
-    padding: 18rem;
   }
 
   .laptopSm\:px-12{
@@ -1982,6 +1964,11 @@ video {
     padding-right: 6rem;
   }
 
+  .laptopSm\:px-48{
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
   .laptopSm\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -1992,34 +1979,9 @@ video {
     padding-bottom: 5rem;
   }
 
-  .laptopSm\:py-72{
-    padding-top: 18rem;
-    padding-bottom: 18rem;
-  }
-
-  .laptopSm\:px-72{
-    padding-left: 18rem;
-    padding-right: 18rem;
-  }
-
   .laptopSm\:py-48{
     padding-top: 12rem;
     padding-bottom: 12rem;
-  }
-
-  .laptopSm\:px-64{
-    padding-left: 16rem;
-    padding-right: 16rem;
-  }
-
-  .laptopSm\:px-56{
-    padding-left: 14rem;
-    padding-right: 14rem;
-  }
-
-  .laptopSm\:px-48{
-    padding-left: 12rem;
-    padding-right: 12rem;
   }
 
   .laptopSm\:pb-20{
@@ -2112,8 +2074,9 @@ video {
     padding: 60px;
   }
 
-  .laptopMd\:p-80{
-    padding: 20rem;
+  .laptopMd\:px-56{
+    padding-left: 14rem;
+    padding-right: 14rem;
   }
 
   .laptopMd\:px-\[60px\]{
@@ -2121,49 +2084,9 @@ video {
     padding-right: 60px;
   }
 
-  .laptopMd\:py-80{
-    padding-top: 20rem;
-    padding-bottom: 20rem;
-  }
-
-  .laptopMd\:px-80{
-    padding-left: 20rem;
-    padding-right: 20rem;
-  }
-
-  .laptopMd\:py-72{
-    padding-top: 18rem;
-    padding-bottom: 18rem;
-  }
-
-  .laptopMd\:py-64{
-    padding-top: 16rem;
-    padding-bottom: 16rem;
-  }
-
-  .laptopMd\:py-60{
-    padding-top: 15rem;
-    padding-bottom: 15rem;
-  }
-
-  .laptopMd\:py-56{
-    padding-top: 14rem;
-    padding-bottom: 14rem;
-  }
-
   .laptopMd\:py-52{
     padding-top: 13rem;
     padding-bottom: 13rem;
-  }
-
-  .laptopMd\:px-64{
-    padding-left: 16rem;
-    padding-right: 16rem;
-  }
-
-  .laptopMd\:px-56{
-    padding-left: 14rem;
-    padding-right: 14rem;
   }
 
   .laptopMd\:pt-16{

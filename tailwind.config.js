@@ -30,6 +30,7 @@ module.exports = {
         btn: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
         bannerImage: "1px 0px 43.2px rgba(0, 0, 0, 0.69)",
         vision: "20px 20px 30px 0px rgba(0, 0, 0, 0.16)",
+        contact: "0px 15px 50px rgba(0, 0, 0, 0.24)",
       },
       backgroundImage: {
         gradient: "linear-gradient(90deg, #C0B6AA 50%, #806F62 100%)",
