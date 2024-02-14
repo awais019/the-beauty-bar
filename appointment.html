@@ -137,7 +137,7 @@
         </a>
       </div>
     </header>
-    <main class="font-montserrat">
+    <main class="overflow-hidden font-montserrat">
       <section
         class="px-12 py-12 text-center text-white mobileSm:px-16 mobileSm:py-16 mobile:px-20 mobile:py-20 tablet:px-32 laptopSm:px-48 tablet:py-44 laptopSm:py-48 laptopMd:py-52 laptopMd:px-56 laptopLg:px-64 bg-shadow"
       >
@@ -204,7 +204,19 @@
               />
             </div>
           </div>
-          <div class="grid gap-2">
+          <div>
+            <label for="time" class="text-sm">Time</label>
+            <div class="relative p-2 border border-gray-900 rounded-md">
+              <input
+                type="time"
+                name="time"
+                id="time"
+                placeholder="Time"
+                class="w-full focus:outline-none"
+              />
+            </div>
+          </div>
+          <div class="grid gap-2 text-xs mobile:text-sm tablet:text-base">
             <div class="flex flex-col items-stretch gap-2">
               <label for="service" class="text-sm">Select Service</label>
               <select
@@ -224,34 +236,6 @@
                 id="treatment"
                 class="p-1 bg-white border border-gray-900 rounded-md"
               ></select>
-            </div>
-          </div>
-          <div>
-            <p class="text-sm">What part of day is suitable for you?</p>
-            <div class="flex gap-2">
-              <div>
-                <input
-                  type="radio"
-                  name="time"
-                  id="morning"
-                  value="Morning"
-                  checked
-                />
-                <label for="morning" class="text-sm">Morning</label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  name="time"
-                  id="afternoon"
-                  value="Afternoon"
-                />
-                <label for="afternoon" class="text-sm">Afternoon</label>
-              </div>
-              <div>
-                <input type="radio" name="time" id="evening" value="Evening" />
-                <label for="evening" class="text-sm">Evening</label>
-              </div>
             </div>
           </div>
           <div>

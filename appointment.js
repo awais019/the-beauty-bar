@@ -83,15 +83,13 @@ function submitAppointment(e) {
   const formData = new FormData(form);
   const data = Object.fromEntries(formData);
 
-  const time = document.querySelector('input[name="time"]:checked').value;
-
   const whatsappUrl = `https://wa.me/${number}?text=${encodeURIComponent(
     `
     Name: ${data.name}\n 
     Email: ${data.email}\n
     Phone: ${data.phone}\n
     Date: ${data.date}\n
-    Time: ${time}\n
+    Time: ${data.time}\n
     Service: ${data.service}\n
     Treatment: ${data.treatment}\n
     Note: ${data.note}
