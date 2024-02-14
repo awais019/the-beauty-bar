@@ -1,21 +1,21 @@
-const _name = document.getElementById("name");
-const email = document.getElementById("email");
-const phone = document.getElementById("phone");
-const note = document.getElementById("note");
-
 const number = "whatsappnum";
 
 function support(e) {
   e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  const data = formData.entries(formData);
+
   const whatsappUrl = `https://wa.me/${number}?text=${encodeURIComponent(
     `
-    name: ${_name.value}\n 
-    email: ${email.value}\n
-    phone: ${phone.value}\n
-    note: ${note.value}
+    Name: ${data.name}\n 
+    Email: ${data.email}\n
+    Phone: ${data.phone}\n
+    Note: ${data.note}
     `
   )}`;
 
-  // Open WhatsApp
   window.open(whatsappUrl, "_blank");
 }
