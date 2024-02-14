@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -36,7 +36,7 @@ module.exports = {
       backgroundImage: {
         gradient: "linear-gradient(90deg, #C0B6AA 50%, #806F62 100%)",
         gradient1: "linear-gradient(180deg, #C0B6AA 0%, #837265 100%)",
-        servicesBanner: "url('../images/services-banner1.png')",
+        servicesBanner: "url('images/services-banner1.png')",
         contactForm: "linear-gradient(180deg, #BCB2A6 0%, #8B7A6D 100%)",
       },
       screens: {

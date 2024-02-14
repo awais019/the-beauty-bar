@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="w-3/5 bg-white h-1/4 rounded-[100px] laptopSm:w-1/4 laptopSm:h-3/5"></div>
                 <div class="w-full h-1/4 laptopSm:h-3/4 laptopMd:h-full laptopSm:w-1/4 bg-white rounded-[100px]"></div>
                 <img
-                  src="../images/testimonial.png"
+                  src="images/testimonial.png"
                   alt="customer"
                   class="mobileSm:absolute mobileSm:-top-5 mobileSm:right-1/4 laptopSm:top-1/3 laptopSm:left-[38%]"
                 />
               </div>
               <div
-                class="flex flex-col col-span-2 gap-5 relative before:content-[url('../images/open-quote.png')] after:content-[url('../images/close-quote.png')] after:absolute after:-bottom-11 after:right-0 mt-12 laptopSm:mt-20 laptopSm:mb-16 mb-12"
+                class="flex flex-col col-span-2 gap-5 relative before:content-[url('images/open-quote.png')] after:content-[url('images/close-quote.png')] after:absolute after:-bottom-11 after:right-0 mt-12 laptopSm:mt-20 laptopSm:mb-16 mb-12"
               >
                 <div>
                   <p class="text-arsenic text-xl">Leslie Alexander</p>

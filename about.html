@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="output.css" />
     <title>The Beauty Bar</title>
   </head>
   <body class="max-w-screen-xl mx-auto text-black-olive">
@@ -14,15 +14,15 @@
         <div
           class="text-lg tablet:text-2xl laptopSm:text-3xl laptopMd:text-[40px] leading-9 font-logo-font"
         >
-          <a href="./index.html"> The Beauty Bar </a>
+          <a href="/"> The Beauty Bar </a>
         </div>
         <nav class="text-xs tablet:text-sm laptopSm:text-base">
           <ul class="flex items-center gap-6 text-white">
             <li>
-              <a href="./index.html">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="./services.html" class="flex items-center gap-2">
+              <a href="/services.html" class="flex items-center gap-2">
                 <span>Services</span>
                 <svg
                   width="20"
@@ -39,15 +39,15 @@
               </a>
             </li>
             <li>
-              <a href="./about.html">About</a>
+              <a href="/about.html">About</a>
             </li>
             <li>
-              <a href="./contact.html">Contact us</a>
+              <a href="/contact.html">Contact us</a>
             </li>
           </ul>
         </nav>
         <a
-          href="./appointment.html"
+          href="/appointment.html"
           class="flex items-center gap-2 text-xs tablet:text-sm laptopMd:text-base"
         >
           <span>Book Now </span>
@@ -88,15 +88,15 @@
         id="navBar"
       >
         <div class="mb-6 text-2xl leading-9 font-logo-font">
-          <a href="./index.html"> The Beauty Bar </a>
+          <a href="/"> The Beauty Bar </a>
         </div>
         <nav class="mb-6">
-          <ul class="flex flex-col gap-6 text-white">
+          <ul class="flex flex-col items-start gap-6 text-white">
             <li>
-              <a href="./index.html">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="./services.html" class="flex items-center gap-2">
+              <a href="/services.html" class="flex items-center gap-2">
                 <span>Services</span>
                 <svg
                   width="20"
@@ -113,14 +113,14 @@
               </a>
             </li>
             <li>
-              <a href="./about.html">About</a>
+              <a href="/about.html">About</a>
             </li>
             <li>
-              <a href="./contact.html">Contact us</a>
+              <a href="/contact.html">Contact us</a>
             </li>
           </ul>
         </nav>
-        <a href="./appointment.html" class="flex items-center gap-2">
+        <a href="/appointment.html" class="flex items-center gap-2">
           <span>Book Now </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -137,144 +137,92 @@
         </a>
       </div>
     </header>
-    <main class="font-montserrat">
-      <section
-        class="px-12 py-12 text-center text-white mobileSm:px-16 mobileSm:py-16 mobile:px-20 mobile:py-20 tablet:px-32 laptopSm:px-48 tablet:py-44 laptopSm:py-48 laptopMd:py-52 laptopMd:px-56 laptopLg:px-64 bg-shadow"
-      >
-        <p class="font-semibold uppercase">book your appointment</p>
-        <h1
-          class="text-2xl font-bold font-playfair-display mobile:text-3xl tablet:text-4xl laptopSm:text-6xl"
-        >
-          Schedule Your Luxurious Beauty Transformation
-        </h1>
+    <main>
+      <section>
+        <div class="relative">
+          <img src="images/about-banner.png" alt="About banner image" />
+          <h1
+            class="absolute inset-0 flex items-center justify-center font-bold leading-[1.2] text-center text-white-coffee font-playfair-display text-4xl mobileSm:text-5xl tablet:text-6xl laptopSm:text-7xl laptopMd:text-8xl"
+          >
+            The big story behind, our beautyness center
+          </h1>
+        </div>
       </section>
       <section
-        class="py-6 mobileSm:py-8 mobile:py-10 tablet:py-14 laptopMd:px-[60px] px-8 laptopSm:px-12 flex flex-col items-center gap-14"
+        class="py-8 mobile:py-12 tablet:py-16 laptopSm:py-20 laptopMd:px-[60px] px-8 laptopSm:px-12 font-montserrat flex flex-col justify-between gap-12 tablet:gap-24 items-center tablet:flex-row"
       >
-        <form
-          class="bg-white p-2 mobile:p-8 tablet:p-12 laptopSm:p-14 tablet:w-[50%] rounded-[20px] tablet:shadow-contactForm text-gray-900 flex flex-col gap-4"
-          onsubmit="submitAppointment(event)"
-          id="appointment"
+        <div>
+          <p class="font-bold leading-normal text-black uppercase">Our story</p>
+          <p
+            class="mb-3 text-5xl font-bold leading-snug font-playfair-display text-shadow"
+          >
+            The start of the journey
+          </p>
+          <p class="text-lg">
+            Our story began with a passion for transforming ordinary lashes and
+            nails into extraordinary works or art, where every client's unique
+            beauty is celebrated and elevated to new heights.
+          </p>
+        </div>
+        <img
+          src="images/about-journey.png"
+          alt="about journey image"
+          class="shadow-img"
+        />
+      </section>
+      <section
+        class="laptopMd:px-[60px] px-8 laptopSm:px-12 font-montserrat relative"
+        id="mission"
+      >
+        <div
+          class="mobile:px-12 tablet:px-16 laptopSm:px-24 mobile:py-12 tablet:py-16 laptopSm:py-20 bg-gradient1 rounded-[68px] text-granite-gray mobile:relative"
         >
-          <div>
-            <label for="name" class="text-sm">Name</label>
-            <div class="relative p-2 border border-gray-900 rounded-md">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                class="w-full focus:outline-none"
-              />
-            </div>
-          </div>
-          <div>
-            <label for="email" class="text-sm">Email</label>
-            <div class="relative p-2 border border-gray-900 rounded-md">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                class="w-full focus:outline-none"
-              />
-            </div>
-          </div>
-          <div>
-            <label for="phone" class="text-sm">Phone</label>
-            <div class="relative p-2 border border-gray-900 rounded-md">
-              <input
-                type="tel"
-                name="phone"
-                id="phone"
-                placeholder="Phone"
-                class="w-full focus:outline-none"
-              />
-            </div>
-          </div>
-          <div>
-            <label for="date" class="text-sm">Requested Appointment Date</label>
-            <div class="relative p-2 border border-gray-900 rounded-md">
-              <input
-                type="date"
-                name="date"
-                id="date"
-                placeholder="date"
-                class="w-full focus:outline-none"
-              />
-            </div>
-          </div>
-          <div class="grid gap-2">
-            <div class="flex flex-col items-stretch gap-2">
-              <label for="service" class="text-sm">Select Service</label>
-              <select
-                name="service"
-                id="service"
-                class="p-1 bg-white border border-gray-900 rounded-md"
-                onchange="changeTreatment(event)"
-              >
-                <option value="Lashes">Lashes</option>
-                <option value="Nails">Nails</option>
-              </select>
-            </div>
-            <div class="flex flex-col items-stretch gap-2">
-              <label for="treatment" class="text-sm">Select Treatment</label>
-              <select
-                name="treatment"
-                id="treatment"
-                class="p-1 bg-white border border-gray-900 rounded-md"
-              ></select>
-            </div>
-          </div>
-          <div>
-            <p class="text-sm">What part of day is suitable for you?</p>
-            <div class="flex gap-2">
-              <div>
-                <input
-                  type="radio"
-                  name="time"
-                  id="morning"
-                  value="Morning"
-                  checked
-                />
-                <label for="morning" class="text-sm">Morning</label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  name="time"
-                  id="afternoon"
-                  value="Afternoon"
-                />
-                <label for="afternoon" class="text-sm">Afternoon</label>
-              </div>
-              <div>
-                <input type="radio" name="time" id="evening" value="Evening" />
-                <label for="evening" class="text-sm">Evening</label>
-              </div>
-            </div>
-          </div>
-          <div>
-            <label for="note" class="text-sm"
-              >Note (Please add your health history and mention if you have any
-              cosmetic allergies)</label
+          <div
+            class="px-8 py-12 bg-[#E5DFD7] mobile:grid mobile:grid-cols-4 desktop:grid-cols-3 max-laptopSm:grid-rows-4"
+          >
+            <img
+              src="images/mission.png"
+              alt="mission image"
+              class="mobile:absolute mobile:left-[12%] mobile:top-[10%]"
+            />
+            <div
+              class="flex flex-col items-stretch col-start-1 col-end-5 row-start-3 gap-6 justify-stretch laptopSm:row-start-1 laptopSm:col-start-3 desktop:col-start-2"
             >
-            <div class="relative p-2 border border-gray-900 rounded-md">
-              <textarea
-                name="note"
-                id="note"
-                placeholder="Any note for us"
-                class="w-full focus:outline-none"
-              ></textarea>
+              <h3 class="font-semibold">Our Mission</h3>
+              <p class="text-lg">
+                The Beauty Bar exists to provide you with exceptional lashes and
+                nails services, using innovative techniques and high-quality
+                products, to enhance natural beauty, boost confidence, and
+                create unforgettable experiences for you.
+              </p>
             </div>
           </div>
-          <input
-            type="submit"
-            name="submit"
-            id="submit"
-            class="py-3 text-sm font-extrabold text-white uppercase rounded-md bg-shadow"
-          />
-        </form>
+        </div>
+      </section>
+      <section
+        class="relative grid grid-cols-5 mt-8 place-items-stretch mobile:mt-12 tablet:mt-16 laptopSm:mt-20 font-montserrat"
+      >
+        <img src="images/vision-1.png" alt="vision image" />
+        <img src="images/vision-2.png" alt="vision image" />
+        <img src="images/vision-3.png" alt="vision image" />
+        <img src="images/vision-4.png" alt="vision image" />
+        <img src="images/vision-5.png" alt="vision image" />
+        <img src="images/vision-6.png" alt="vision image" />
+        <img src="images/vision-7.png" alt="vision image" />
+        <img src="images/vision-8.png" alt="vision image" />
+        <img src="images/vision-9.png" alt="vision image" />
+        <img src="images/vision-10.png" alt="vision image" />
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div
+            class="flex flex-col gap-4 px-4 py-6 text-center tablet:px-8 laptopSm:px-12 tablet:py-8 laptopSm:py-10 bg-floral-white text-granite-gray"
+          >
+            <h3 class="inset-0 font-semibold uppercase">our vision</h3>
+            <p class="max-w-sm text-lg">
+              The Beauty Bar is a space to empower your beauty through stunning
+              lashes and exquisite nail art.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
     <footer
@@ -284,7 +232,7 @@
         class="flex flex-col text-white mobile:text-lg tablet:text-xl laptopSm:text-2xl mobileSm:flex-row gap-14"
       >
         <a
-          href="./appointment.html"
+          href="/appointment.html"
           class="flex items-center gap-4 p-3 border border-shadow"
         >
           <span>Book Now</span>
@@ -325,12 +273,12 @@
             Useful Links
           </h3>
           <div class="grid gap-2 mobileSm:grid-cols-3">
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About Us</a>
-            <a href="./services.html">Services</a>
-            <a href="./services.html#prices">Price</a>
-            <a href="./about.html#mission">Our Mission</a>
-            <a href="./contact.html">Contact Us</a>
+            <a href="/">Home</a>
+            <a href="/about.html">About Us</a>
+            <a href="/services.html">Services</a>
+            <a href="/services.html#prices">Price</a>
+            <a href="/about.html#mission">Our Mission</a>
+            <a href="/contact.html">Contact Us</a>
           </div>
         </div>
         <div class="flex flex-col gap-4">
@@ -372,7 +320,7 @@
         </div>
       </div>
     </footer>
-    <script src="./mobileNav.js"></script>
-    <script src="./appointment.js"></script>
+    <script src="mobileNav.js"></script>
+    <script src="currentPage.js"></script>
   </body>
 </html>
