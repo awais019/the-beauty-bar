@@ -148,6 +148,134 @@
           Schedule Your Luxurious Beauty Transformation
         </h1>
       </section>
+      <section
+        class="py-6 mobileSm:py-8 mobile:py-10 tablet:py-14 laptopMd:px-[60px] px-8 laptopSm:px-12 flex flex-col items-center gap-14"
+      >
+        <form
+          class="bg-white p-2 mobile:p-8 tablet:p-12 laptopSm:p-14 tablet:w-[50%] rounded-[20px] tablet:shadow-contactForm text-gray-900 flex flex-col gap-4"
+          onsubmit="submitAppointment(event)"
+          id="appointment-form"
+        >
+          <div>
+            <label for="name" class="text-sm">Name</label>
+            <div class="relative p-2 border border-gray-900 rounded-md">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                class="w-full focus:outline-none"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="email" class="text-sm">Email</label>
+            <div class="relative p-2 border border-gray-900 rounded-md">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                class="w-full focus:outline-none"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="phone" class="text-sm">Phone</label>
+            <div class="relative p-2 border border-gray-900 rounded-md">
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Phone"
+                class="w-full focus:outline-none"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="date" class="text-sm">Requested Appointment Date</label>
+            <div class="relative p-2 border border-gray-900 rounded-md">
+              <input
+                type="date"
+                name="date"
+                id="date"
+                placeholder="date"
+                class="w-full focus:outline-none"
+              />
+            </div>
+          </div>
+          <div class="grid gap-2">
+            <div class="flex flex-col items-stretch gap-2">
+              <label for="service" class="text-sm">Select Service</label>
+              <select
+                name="service"
+                id="service"
+                class="p-1 bg-white border border-gray-900 rounded-md"
+                onchange="changeTreatment(event)"
+              >
+                <option value="Lashes">Lashes</option>
+                <option value="Nails">Nails</option>
+              </select>
+            </div>
+            <div class="flex flex-col items-stretch gap-2">
+              <label for="treatment" class="text-sm">Select Treatment</label>
+              <select
+                name="treatment"
+                id="treatment"
+                class="p-1 bg-white border border-gray-900 rounded-md"
+              ></select>
+            </div>
+          </div>
+          <div>
+            <p class="text-sm">What part of day is suitable for you?</p>
+            <div class="flex gap-2">
+              <div>
+                <input
+                  type="radio"
+                  name="time"
+                  id="morning"
+                  value="Morning"
+                  checked
+                />
+                <label for="morning" class="text-sm">Morning</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="time"
+                  id="afternoon"
+                  value="Afternoon"
+                />
+                <label for="afternoon" class="text-sm">Afternoon</label>
+              </div>
+              <div>
+                <input type="radio" name="time" id="evening" value="Evening" />
+                <label for="evening" class="text-sm">Evening</label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label for="note" class="text-sm"
+              >Note (Please add your health history and mention if you have any
+              cosmetic allergies)</label
+            >
+            <div class="relative p-2 border border-gray-900 rounded-md">
+              <textarea
+                name="note"
+                id="note"
+                placeholder="Any note for us"
+                class="w-full focus:outline-none"
+              ></textarea>
+            </div>
+          </div>
+          <input
+            type="submit"
+            name="submit"
+            id="submit"
+            class="py-3 text-sm font-extrabold text-white uppercase rounded-md bg-shadow"
+          />
+        </form>
+      </section>
     </main>
     <footer
       class="bg-tuscany flex flex-col gap-10 laptopMd:p-[60px] p-8 laptopSm:p-12"
@@ -245,5 +373,6 @@
       </div>
     </footer>
     <script src="./mobileNav.js"></script>
+    <script src="./appointment.js"></script>
   </body>
 </html>
